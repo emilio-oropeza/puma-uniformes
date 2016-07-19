@@ -1,0 +1,41 @@
+.img-center{
+	margin: auto;
+}
+.abs-center{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+article{
+	font-family: "Roboto";
+	font-weight: 400;
+	color: #fff;
+}
+#portada{
+	background-image: url("../images/portada/Fondo.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+	#portada > img{
+		padding-top: 70px;
+	}
+	#portada > p{
+		padding-top: 20px;
+		color: #fff;
+		text-align: center;
+		font-size: 16px;
+	}
+	.uniformes{
+		position: relative;
+		height: 100%;
+	}
+	.uniformes > img{
+		position: absolute;
+		bottom: 10%;
+		cursor: pointer;
+		max-width: 90%;
+	}
