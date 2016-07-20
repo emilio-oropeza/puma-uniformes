@@ -20,6 +20,9 @@ article{
 	background-size: cover;
 	position: relative;
 }
+	#portada > .container{
+		margin-top: 40px;
+	}
 	#portada > img{
 		padding-top: 70px;
 	}
@@ -28,14 +31,38 @@ article{
 		color: #fff;
 		text-align: center;
 		font-size: 16px;
+		width: 80%;
+		max-width: 625px;
+		margin: auto;
 	}
 	.uniformes{
 		position: relative;
 		height: 100%;
+		margin-bottom: 15px;
 	}
+	.uniformes > img {
+	    position: relative;
+	    max-width: 90%;
+	    cursor: pointer;
+	    width: 50%;
+	}
+@media screen and (min-width: 768px){
+	#portada > .container{
+		margin-top: 0px;
+	}
+		.uniformes{
+			position: relative;
+			height: 100%;
+			margin-bottom: 0px;
+		}
+		.uniformes > img{
+			position: absolute;
+			bottom: 25%;	
+
+		}
+}
+@media screen and (min-width: 992px){
 	.uniformes > img{
-		position: absolute;
-		bottom: 10%;
-		cursor: pointer;
-		max-width: 90%;
+		bottom: 20%;
 	}
+}

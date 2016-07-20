@@ -14,6 +14,17 @@
 			methods:{
 				init:function(){
 					componentObj.methods.select();
+					componentObj.methods.resize();
+					$(window).resize(function(){
+						componentObj.methods.resize();
+					});
+				},
+				resize: function(){
+					if($(window).width() > 768){
+						$("#portada > .container").addClass("abs-center");
+					}else{
+						$("#portada > .container").removeClass("abs-center");
+					}
 				},
 				select:function(){
 					$(".uniformes").each(function(){

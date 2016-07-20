@@ -19,8 +19,10 @@ function barsDisapear(){
 	$("#mobilemenu").remove();
 }
 function screenHeight(){
-	var height = $(window).height();
-	height = height - 60;	
+	var height = "auto";
+	if($(window).width() > 768){
+		height = $(window).height() - 60;
+	}		
 	return height;
 }
 function animateScroll(){
