@@ -74,6 +74,7 @@ article{
 	.landing-thumbs > div > img{
 		max-height: 126px;
 		cursor: zoom-in;
+		z-index: 1;
 	}
 	.landing-thumbs > div:hover > img,
 	.landing-thumbs > div:focus > img{
