@@ -9,6 +9,7 @@ $(document).ready(function(){
 	});
 	barsDisapear();
 	$("article").uniformes();
+	$('a').click(animateScroll);
 });
 
 

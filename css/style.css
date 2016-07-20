@@ -45,12 +45,46 @@ article{
 		height: 100%;
 		margin-bottom: 15px;
 	}
-	.uniformes > img {
+	.uniformes > a > img {
 	    position: relative;
 	    max-width: 90%;
 	    cursor: pointer;
 	    width: 50%;
 	}
+.landing{
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+	.landing-txt {
+	    background-color: #f1f1f3;
+	    padding: 10% 5%;
+	    color: #000;
+	    text-align: center;
+	    font-size: 15px;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	}
+	.landing-thumbs {
+	    margin-bottom: 30px;
+	}
+	.landing-thumbs > div {
+	    padding: 3px;
+	    position: relative;
+	}
+	.landing-thumbs > div > img{
+		max-height: 126px;
+		cursor: zoom-in;
+	}
+	.landing-thumbs > div:hover > img,
+	.landing-thumbs > div:focus > img{
+		transform: scale(1.5);
+		z-index: 3;
+	}
+@media screen and (min-width: 450px){
+	.uniformes > a > img {
+		width: 25%
+	}
+}
 @media screen and (min-width: 768px){
 	#portada > .container{
 		margin-top: 0px;
@@ -60,14 +94,17 @@ article{
 			height: 100%;
 			margin-bottom: 0px;
 		}
-		.uniformes > img{
+		.uniformes > a > img{
 			position: absolute;
 			bottom: 25%;	
-
+			width: 100%;
 		}
+	.landing-txt {
+	    padding: 70px 100px;
+	}
 }
 @media screen and (min-width: 992px){
-	.uniformes > img{
+	.uniformes > a > img{
 		bottom: 20%;
 	}
 }
