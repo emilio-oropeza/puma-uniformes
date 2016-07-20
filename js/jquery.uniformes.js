@@ -32,17 +32,31 @@
 						var nombre = $(this).data("equipo");
 						$(this).find("img").hover(
 							function(){
-								$(el).css({
-									"background-color":"rgba(155,175,61,0.8)"
-								});
-								$(this).attr("src",urlIndepth+"images/portada/uniformes/"+nombre+"_away.png");
-							}, function(){
-								$(el).css({
-									"background-color":"transparent"
-								});
-								$(this).attr("src",urlIndepth+"images/portada/uniformes/"+nombre+"_home.png");
+								componentObj.methods.showHome(el, this, nombre);
+							}, 
+							function(){
+								componentObj.methods.showAway(el, this, nombre);
+						});
+						$(this).find("img").focus(
+							function(){
+								componentObj.methods.showHome(el, this, nombre);
+							}, 
+							function(){
+								componentObj.methods.showAway(el, this, nombre);
 						});
 					});
+				},
+				showHome: function(el, img, nombre){
+					$(el).css({
+						"background-color":"rgba(155,175,61,0.8)"
+					});
+					$(img).attr("src",urlIndepth+"images/portada/uniformes/"+nombre+"_away.png");
+				},
+				showAway: function(el, img, nombre){
+					$(el).css({
+						"background-color":"transparent"
+					});
+					$(img).attr("src",urlIndepth+"images/portada/uniformes/"+nombre+"_home.png");
 				}
 			}
 		};
