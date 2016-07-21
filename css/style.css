@@ -1,3 +1,20 @@
+#puma-menu {
+	display: none;
+    width: 40px;
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    background-color: transparent;
+}
+.menu-el{
+	list-style: none;
+	margin-bottom: 10px;
+	opacity: 0.3;
+}
+.menu-el:hover,
+.menu-el.active{
+	opacity: 1.0;
+}
 .preload{
 	width: 1px;
 	height: 1px;
@@ -70,6 +87,9 @@ article{
 	.landing-thumbs > div {
 	    padding: 3px;
 	    position: relative;
+	    height: 126px;
+	    margin-right: 10px;
+		margin-bottom: 10px;
 	}
 	.landing-thumbs > div > img{
 		max-height: 126px;
@@ -103,9 +123,20 @@ article{
 	.landing-txt {
 	    padding: 70px 100px;
 	}
+	#puma-menu {
+	    left: 35px;
+	}
 }
 @media screen and (min-width: 992px){
 	.uniformes > a > img{
 		bottom: 20%;
+	}
+	#puma-menu {
+	    left: 50px;
+	}
+}
+@media screen and (min-width: 1200px){
+	#puma-menu {
+	    left: 85px;
 	}
 }
